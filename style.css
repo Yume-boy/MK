@@ -5,6 +5,15 @@
     
 }
 
+#load {
+    display: block;
+}
+
+.close #load {
+    display: none;
+    transition: all 2s ease-in-out;
+}
+
 
 body {
     background-color: #000000!important;
@@ -42,6 +51,7 @@ body {
     width: 200px;
     height: 200px;
     position: relative;
+    font-size: 2rem;
   }
 
 .hero {
@@ -350,6 +360,8 @@ nav h3{
     position: relative;
   }
 
+  
+
 
   /* Projects styles*/
 
@@ -494,6 +506,13 @@ nav h3{
         font-size: 7px;
     }
 
+    #loadPage {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        font-size: 10px;
+      }
+
 }
 
 
@@ -507,6 +526,14 @@ nav h3{
         height: 200px;
         width: 200px;
     }
+
+    #loadPage {
+        margin: 20px;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        font-size: 1rem;
+      }
 }
 
 @media (min-width:512px) and (max-width: 600px){
@@ -536,8 +563,8 @@ nav h3{
     
     .sub-hero-1 img {
         border-radius: 20px;
-        height: 70px;
-        width: 70px;
+        height: 150px;
+        width: 100px;
     }
 
     .about-hero-1 P {
@@ -575,7 +602,24 @@ nav h3{
         position: relative;
       }
 
+      #loadPage {
+        margin: 20px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        font-size: 7px;
+      }
+
+     .learn-more a {
+        font-size: 7px !important;
+        line-height: 1;
+        text-transform: uppercase;
     
+    }
+    .learn-more {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 
@@ -611,8 +655,8 @@ nav h3{
     
     }
     .learn-more {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
     }
 
     .lol {
