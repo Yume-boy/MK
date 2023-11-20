@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+    <header class="fixed-top">
+        <nav class="animate__animated animate__backInDown">
+            
+            <div class="nav-logo">
+                <a href="index.html"><h3>MK</h3></a>
+            </div>
+            <div class="nav-content">
+                <a href="projects.html">PROJECTS</a>
+                <a href="about.html">ABOUT</a>
+            </div>
+            <div class="nav-button">
+                <a href="connect.html"><button type="button" class="">available for freelance</button></a>
+            </div>
+        </nav>
+       </header>
+
+       <main class="">
+        <section class="about-hero mb-5 mt-5" >
+            <img src="test image.jpg" alt="" class="" data-aos="fade-down"
+            data-aos-duration="3000"> 
+        </section>
+
+        <div class="rule-2 mt-5 mb-3"></div>
+
+
+        <section class="mt-5 mb-5 about-hero-1">
+            <div class="container text-left">
+                <div class="row align-items-start">
+                  <div class="col-5">
+                    <p>ABOUT ME</p>
+                  </div>
+                  <div class="col-7  text-left">
+                    <h2>Hello, my name is Marvellous, a graduate of Mountain Top University and currently based in Ogun State, Nigeria</h2>
+                    <br>
+                    <br>
+                    <h2>When i am not writing codes, i enjoy playing basketball, drawing and watching movies</h2>
+                  </div>
+                  
+                </div>
+              </div>
+        </section>
+
+        <div class="rule mt-3 mb-3"></div>
+
+        <section class="mt-5 mb-5 about-hero-1">
+          <div class="container text-left">
+              <div class="row align-items-start">
+                <div class="col-5">
+                  <p>SKILLS</p>
+                </div>
+                <div class="col-7">
+                  <h4>HTML</h4>
+                  <div id="container"></div>
+                  <h4>CSS</h4>
+                  <div id="newBar1"></div>
+                  <h4>JAVASCRIPT</h4>
+                  <div id="newBar2"></div>
+                  <h4>WORDPRESS</h4>
+                  <div id="newBar3"></div>
+                </div>
+                
+              </div>
+            </div>
+      </section>
+
+      <div class="rule mt-3 mb-3"></div>
+
+      <section class=" mt-5 pt-5" id="sub-hero-2">
+        <div class="connect" data-aos="fade-up" data-aos-duration="2000" >
+          
+            <h2>LET'S CONNECT</h2>
+            <a href="mailto:comlaf2001@gmail.com">
+              <div class="writeMessage mt-3">
+                WRITE A MESSAGE
+              </div>
+            </a>
+          
+        </div>
+        
+      </section>
+      <div class="container text-left social mb-3">
+        <div class="row align-items-center">
+          <div class="col-8">
+            FEEL FREE TO CONNECT WITH ME ON SOCIAL
+          </div>
+          <div class="col-2">
+            TWITTER
+          </div>
+          <div class="col-2">
+            LINKEDIN
+          </div>
+          
+        </div>
+      </div>
+       </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="progressbar.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    // progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+var bar = new ProgressBar.Line(container, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+    style: {
+      // Text color.
+      // Default: same as stroke color (options.color)
+      color: '#999',
+      position: 'absolute',
+      right: '0',
+      top: '30px',
+      padding: 0,
+      margin: 0,
+      transform: null
+    },
+    autoStyleContainer: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+
+bar.animate(0.85);  // Number from 0.0 to 1.0
+
+
+var bar2 = new ProgressBar.Line(newBar1, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+    style: {
+      // Text color.
+      // Default: same as stroke color (options.color)
+      color: '#999',
+      position: 'absolute',
+      right: '0',
+      top: '30px',
+      padding: 0,
+      margin: 0,
+      transform: null
+    },
+    autoStyleContainer: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar2) => {
+    bar2.setText(Math.round(bar2.value() * 100) + ' %');
+  }
+});
+
+bar2.animate(0.79);  // Number from 0.0 to 1.0
+
+
+var bar3 = new ProgressBar.Line(newBar2, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+    style: {
+      // Text color.
+      // Default: same as stroke color (options.color)
+      color: '#999',
+      position: 'absolute',
+      right: '0',
+      top: '30px',
+      padding: 0,
+      margin: 0,
+      transform: null
+    },
+    autoStyleContainer: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar3) => {
+    bar3.setText(Math.round(bar3.value() * 100) + ' %');
+  }
+});
+
+bar3.animate(0.70);  // Number from 0.0 to 1.0
+
+
+var bar4 = new ProgressBar.Line(newBar3, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+    style: {
+      // Text color.
+      // Default: same as stroke color (options.color)
+      color: '#999',
+      position: 'absolute',
+      right: '0',
+      top: '30px',
+      padding: 0,
+      margin: 0,
+      transform: null
+    },
+    autoStyleContainer: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar4) => {
+    bar4.setText(Math.round(bar4.value() * 100) + ' %');
+  }
+});
+
+bar4.animate(0.80);  // Number from 0.0 to 1.0
+
+  </script>
+</body>
+</html>
